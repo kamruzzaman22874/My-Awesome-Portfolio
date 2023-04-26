@@ -5,6 +5,7 @@ import Contact from '../Contact/Contact';
 import Skills from '../Skills/Skills';
 import Work from '../Work/Work';
 import profile from '../../assets/profile-portfolio-removebg.png';
+import { Link } from 'react-scroll';
 
 const Home = () => {
 	return (
@@ -27,12 +28,14 @@ const Home = () => {
 						applications.
 					</p>
 					<div className=''>
-						<button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-							View Work
-							<span className='group-hover:rotate-90 duration-300'>
-								<HiArrowNarrowRight className='ml-3'></HiArrowNarrowRight>
-							</span>
-						</button>
+						<Link to='work' smooth={true} duration={500}>
+							<button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+								View Work
+								<span className='group-hover:rotate-90 duration-300'>
+									<HiArrowNarrowRight className='ml-3'></HiArrowNarrowRight>
+								</span>
+							</button>
+						</Link>
 					</div>
 				</div>
 				<div className=''>

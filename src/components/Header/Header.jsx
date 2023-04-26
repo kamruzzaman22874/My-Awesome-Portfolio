@@ -13,7 +13,6 @@ const Header = () => {
 		<div>
 			<div className='navbar fixed w-full h-[80px] flex justify-between items-center bg-[#0a192f]  text-gray-300 md:px-36 px-8 py-4'>
 				<div className='flex-1'>
-					{/* <img src={logo} alt='' style={{ width: '50px' }} /> */}
 					<h2>
 						<span className='text-3xl'>My</span>
 						<span className='text-xl text-pink-600 font-bold'>Awesome</span>
