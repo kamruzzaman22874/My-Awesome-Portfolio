@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+	FaBars,
+	FaTimes,
+	FaGithub,
+	FaLinkedin,
+	FaCloudDownloadAlt,
+} from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Navbar from '../Login/Navbar';
 import { useState } from 'react';
 
@@ -20,8 +25,8 @@ const Header = () => {
 						<span className='text-3xl font-bold'>Portfolio</span>
 					</h2>
 				</div>
-				<div className='flex-none'>
-					<ul className='hidden md:flex menu menu-horizontal px-1'>
+				<div className='flex-none '>
+					<ul className='hidden md:flex items-center menu-horizontal px-1'>
 						<li>
 							<Link to='home' smooth={true} duration={500}>
 								Home
@@ -46,6 +51,16 @@ const Header = () => {
 							<Link to='contact' smooth={true} duration={500}>
 								Contact
 							</Link>
+						</li>
+						<li className='bg-pink-600 rounded hover:bg-pink-600'>
+							<a
+								className='text-xl flex justify-between items-center  py-2 bg-none'
+								href='https://drive.google.com/u/0/uc?id=1NvTLUKeIcGpJ_TwR5UlKco_xj33r06GM&export=download'
+								smooth={true}
+								duration={500}>
+								<FaCloudDownloadAlt></FaCloudDownloadAlt>
+								<span className='ml-3'>Resume</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -92,34 +107,52 @@ const Header = () => {
 							Contact
 						</Link>
 					</li>
+					<li className='py-6 text-4xl'>
+						<a
+							href='https://drive.google.com/u/0/uc?id=1NvTLUKeIcGpJ_TwR5UlKco_xj33r06GM&export=download'
+							onClick={handleClick}
+							to='contact'
+							smooth={true}
+							duration={500}>
+							Download CV
+						</a>
+					</li>
 				</ul>
 			</div>
 
 			<div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
 				<ul className='text-gray-300'>
 					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 p-4 my-2'>
-						<Link
-							to='https://www.linkedin.com/in/md-jamal-hossen-583989220/?originalSubdomain=bd'
+						<a
+							href='https://www.linkedin.com/in/md-jamal-hossen-583989220/?originalSubdomain=bd'
+							target='_blank'
 							className='flex justify-between items-center w-full text-gray-300'>
 							Linkedin <FaLinkedin size={30}></FaLinkedin>
-						</Link>
+						</a>
 					</li>
 					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] p-4 my-2'>
-						<Link
-							to='https://github.com/kamruzzaman22874'
+						<a
+							href='https://github.com/kamruzzaman22874'
+							target='_blank'
 							className='flex justify-between items-center w-full text-gray-300'>
 							Github <FaGithub size={30}></FaGithub>
-						</Link>
+						</a>
 					</li>
 					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0] p-4 my-2'>
-						<Link className='flex justify-between items-center w-full text-gray-300'>
+						<Link
+							to='contact'
+							smooth={true}
+							duration={500}
+							className='flex justify-between items-center w-full text-gray-300'>
 							Email <HiOutlineMail size={30}></HiOutlineMail>
 						</Link>
 					</li>
 					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] p-4 my-2'>
-						<Link className='flex justify-between items-center w-full text-gray-300'>
-							Resume <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
-						</Link>
+						<a
+							href='https://drive.google.com/u/0/uc?id=1NvTLUKeIcGpJ_TwR5UlKco_xj33r06GM&export=download'
+							className='flex justify-between items-center w-full text-gray-300'>
+							Resume <FaCloudDownloadAlt size={30}></FaCloudDownloadAlt>
+						</a>
 					</li>
 				</ul>
 			</div>
