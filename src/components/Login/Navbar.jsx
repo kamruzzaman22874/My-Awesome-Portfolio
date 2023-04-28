@@ -9,7 +9,7 @@ const Navbar = () => {
 	return (
 		<div className='hidden lg:flex fixed flex-col top-[40%] right-0'>
 			<ul className='text-gray-300 mr-[-100px]'>
-				<li className='w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[100px]  duration-300 bg-blue-600 p-4 my-2'>
+				<li className='w-[160px] h-[60px] flex justify-between items-center mr-[-100px]   duration-300 bg-blue-600 p-4 my-2'>
 					<Link
 						to='home'
 						smooth={true}

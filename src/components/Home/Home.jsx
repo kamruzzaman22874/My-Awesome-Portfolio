@@ -7,6 +7,8 @@ import Work from '../Work/Work';
 import profile from '../../assets/profile-portfolio-removebg.png';
 import { Link } from 'react-scroll';
 import Typed from 'react-typed';
+import './Home.css';
+
 const Home = () => {
 	return (
 		<div
@@ -18,10 +20,10 @@ const Home = () => {
 					{/* <h1 className='text-4xl sm:text-5xl font-bold text-[#ccd6f6]'>
 						<Typed strings={['MD.Jamal Hossen']} typeSpeed={50} loop />
 					</h1> */}
-
 					<h1 className='text-4xl sm:text-5xl font-bold text-[#ccd6f6]'>
 						MD.Jamal Hossen
 					</h1>
+
 					<h2 className='text-4xl sm:text-5xl font-bold text-[#8892b0]'>
 						<Typed
 							strings={["I'm Full Stack Developer"]}
@@ -45,9 +47,9 @@ const Home = () => {
 						</Link>
 					</div>
 				</div>
-				<div className=''>
+				<div className='bg-img w-50'>
 					<img
-						className='md:w-3/4 px-4 my-4 rounded-lg object-fill portfolio-profile bg-white'
+						className='md:w-3/4  px-4 my-4 rounded-lg object-cover portfolio-profile bg-[#0a2145]'
 						src={profile}
 						alt=''
 					/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
 	return (
@@ -13,26 +14,26 @@ const Contact = () => {
 					<p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>
 						Talk To Me
 					</p>
-					<p className='py-4 text-gray-300'>
+					<p className='py-4 text-gray-300 text-lg font-bold'>
 						Submit the form bellow or shoot me an email
 						-hossen2022jamal@gmail.com
 					</p>
 				</div>
 
 				<input
-					className='bg-[#ccd6f6] p-2'
+					className='bg-[#0a192f] p-2 boxShadow outline-none text-white text-lg rounded'
 					type='text'
 					placeholder='Name'
 					name='name'
 				/>
 				<input
-					className='my-4 p-2 bg-[#ccd6f6]'
+					className='bg-[#0a192f] my-4 p-2 boxShadow outline-none text-white text-lg rounded'
 					type='email'
 					placeholder='Email'
 					name='email'
 				/>
 				<textarea
-					className='bg-[#ccd6f6] p-2'
+					className='bg-[#0a192f] p-2 boxShadow outline-none text-white text-lg rounded'
 					name='message'
 					rows='10'
 					placeholder='Message'></textarea>

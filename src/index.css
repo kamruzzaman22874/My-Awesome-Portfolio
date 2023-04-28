@@ -28,5 +28,8 @@
 	) !important;
 }
 .portfolio-profile{
-	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 66% 76%, 66% 100%, 30% 76%, 0% 75%);
+}
+.bg-img{
+   background: url('../../assets/Vector1.png');
 }

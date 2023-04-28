@@ -27,32 +27,32 @@ const Header = () => {
 				</div>
 				<div className='flex-none '>
 					<ul className='hidden md:flex items-center menu-horizontal px-1'>
-						<li>
+						<li className='shadow-md p-3 hover:bg-blue-900 rounded font-bold text-lg'>
 							<Link to='home' smooth={true} duration={500}>
 								Home
 							</Link>
 						</li>
-						<li tabIndex={0}>
+						<li className='shadow-md p-3 hover:bg-blue-900 rounded font-bold text-lg'>
 							<Link to='about' smooth={true} duration={500}>
 								About
 							</Link>
 						</li>
-						<li>
+						<li className='shadow-md p-3 hover:bg-blue-900 rounded font-bold text-lg'>
 							<Link to='skills' smooth={true} duration={500}>
 								Skills
 							</Link>
 						</li>
-						<li>
+						<li className='shadow-md p-3 hover:bg-blue-900 rounded font-bold text-lg'>
 							<Link to='work' smooth={true} duration={500}>
 								Works
 							</Link>
 						</li>
-						<li>
+						<li className='shadow-md p-3 hover:bg-blue-900 rounded font-bold text-xl'>
 							<Link to='contact' smooth={true} duration={500}>
 								Contact
 							</Link>
 						</li>
-						<li className='bg-pink-600 rounded hover:bg-pink-600'>
+						<li className='bg-pink-600 rounded hover:bg-pink-900 ml-2 py-1'>
 							<a
 								className='text-xl flex justify-between items-center  py-2 bg-none'
 								href='https://drive.google.com/u/0/uc?id=1NvTLUKeIcGpJ_TwR5UlKco_xj33r06GM&export=download'
@@ -79,12 +79,12 @@ const Header = () => {
 							Home
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-6 text-4xl shadow-md p-3 hover:bg-blue-900 rounded font-bold'>
 						<Link onClick={handleClick} to='about' smooth={true} duration={500}>
 							About
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-6 text-4xl shadow-md p-3 hover:bg-blue-900 rounded font-bold'>
 						<Link
 							onClick={handleClick}
 							to='skills'
@@ -93,12 +93,12 @@ const Header = () => {
 							Skills
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-6 text-4xl shadow-md p-3 hover:bg-blue-900 rounded font-bold'>
 						<Link onClick={handleClick} to='work' smooth={true} duration={500}>
 							Works
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-6 text-4xl shadow-md p-3 hover:bg-blue-900 rounded font-bold'>
 						<Link
 							onClick={handleClick}
 							to='contact'
@@ -107,14 +107,14 @@ const Header = () => {
 							Contact
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='bg-pink-600 rounded hover:bg-pink-900 ml-2 py-1'>
 						<a
+							className='text-xl flex justify-between items-center  py-2 bg-none'
 							href='https://drive.google.com/u/0/uc?id=1NvTLUKeIcGpJ_TwR5UlKco_xj33r06GM&export=download'
-							onClick={handleClick}
-							to='contact'
 							smooth={true}
 							duration={500}>
-							Download CV
+							<FaCloudDownloadAlt></FaCloudDownloadAlt>
+							<span className='ml-3'>Resume</span>
 						</a>
 					</li>
 				</ul>
